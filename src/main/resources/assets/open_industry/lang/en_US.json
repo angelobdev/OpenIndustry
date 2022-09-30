@@ -3,6 +3,11 @@
 
   "item.open_industry.copper_ingot" : "Copper Ingot",
 
+  "item.open_industry.copper_helmet" : "Copper Helmet",
+  "item.open_industry.copper_chestplate" : "Copper Chestplate",
+  "item.open_industry.copper_leggings" : "Copper Leggings",
+  "item.open_industry.copper_boots" : "Copper Boots",
+
   "block.open_industry.copper_ore" : "Copper Ore",
   "block.open_industry.copper_block" : "Block of Copper"
 }
