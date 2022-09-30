@@ -10,13 +10,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(OpenIndustry.MODID)
 public class OpenIndustry {
+
     // Define mod id in a common place for everything to reference
     public static final String MODID = "open_industry";
     public static final Logger LOGGER = LogUtils.getLogger();
-
 
     public OpenIndustry() {
         // Register the commonSetup method for modloading
@@ -33,7 +34,7 @@ public class OpenIndustry {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
-        LOGGER.info("Welcome to OpenIndustry for Minecraft Client 1.19.2!");
+        LOGGER.info("Welcome to OpenIndustry for Minecraft 1.19.2!");
 
     }
 

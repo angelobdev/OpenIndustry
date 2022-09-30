@@ -1,8 +1,8 @@
 package com.angelobdev.openindustry.block;
 
 import com.angelobdev.openindustry.OpenIndustry;
+import com.angelobdev.openindustry.block.custom.OreBlock;
 import com.angelobdev.openindustry.item.ItemsHolder;
-import com.angelobdev.openindustry.item.OICreativeModTab;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -17,14 +17,15 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-@SuppressWarnings("unused")
+import static com.angelobdev.openindustry.item.ItemsHolder.OI_TAB;
+
 public final class BlocksHolder {
 
     // Blocks Registry
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, OpenIndustry.MODID);
 
-    // Blocks
-    public static final RegistryObject<Block> COPPER_ORE = registerBlock(
+    //COPPER BLOCKS SET
+    public static final RegistryObject<Block> COPPER_ORE = BlocksHolder.registerBlock(
             "copper_ore",
             () -> new OreBlock(
                     BlockBehaviour.Properties
@@ -32,31 +33,31 @@ public final class BlocksHolder {
                             .strength(3f),
                     UniformInt.of(3, 7)
             ),
-            OICreativeModTab.OI_TAB
+            OI_TAB
     );
 
-    public static final RegistryObject<Block> COPPER_BLOCK = registerBlock(
+    public static final RegistryObject<Block> COPPER_BLOCK = BlocksHolder.registerBlock(
             "copper_block",
             () -> new Block(
                     BlockBehaviour.Properties
                             .of(Material.METAL)
                             .strength(5f)
             ),
-            OICreativeModTab.OI_TAB
+            OI_TAB
     );
 
-    // Register Function
-    public static void register(IEventBus eventBus){
+    // Register Functions
+    public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
+    public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
         return toReturn;
     }
 
-    private static <T extends Block> void registerBlockItem(String name, Supplier<T> block, CreativeModeTab tab){
+    public static <T extends Block> void registerBlockItem(String name, Supplier<T> block, CreativeModeTab tab) {
         ItemsHolder.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
 }
