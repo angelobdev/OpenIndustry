@@ -1,0 +1,8 @@
+{
+  "itemGroup.open_industry_tab" : "Open Industry",
+
+  "item.open_industry.copper_ingot" : "Copper Ingot",
+
+  "block.open_industry.copper_ore" : "Copper Ore",
+  "block.open_industry.copper_block" : "Block of Copper"
+}
