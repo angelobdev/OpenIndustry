@@ -26,12 +26,12 @@ public class OpenIndustry {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
 
-        // Register OpenIndustry customs
-        BlocksHolder.register(modEventBus);
-        ItemsHolder.register(modEventBus);
+        // OpenIndustry custom registries
+        BlocksHolder.register(modEventBus); // Blocks container
+        ItemsHolder.register(modEventBus); // Items container
 
         OIConfiguredFeatures.register(modEventBus);
-        OIPlacedFeatures.register(modEventBus);
+        OIPlacedFeatures.register(modEventBus); // Ore Spawning
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

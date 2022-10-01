@@ -1,9 +1,7 @@
 package com.angelobdev.openindustry.block;
 
 import com.angelobdev.openindustry.OpenIndustry;
-import com.angelobdev.openindustry.block.custom.OreBlock;
 import com.angelobdev.openindustry.item.ItemsHolder;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -28,11 +26,11 @@ public final class BlocksHolder {
     // region COPPER
     public static final RegistryObject<Block> COPPER_ORE = BlocksHolder.registerBlock(
             "copper_ore",
-            () -> new OreBlock(
+            () -> new Block(
                     BlockBehaviour.Properties
                             .of(Material.STONE)
-                            .strength(3f),
-                    UniformInt.of(3, 7)
+                            .strength(3f)
+                            .requiresCorrectToolForDrops()
             ),
             OI_TAB
     );
