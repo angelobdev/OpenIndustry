@@ -19,12 +19,13 @@ import java.util.function.Supplier;
 
 import static com.angelobdev.openindustry.item.ItemsHolder.OI_TAB;
 
+@SuppressWarnings("unused")
 public final class BlocksHolder {
 
     // Blocks Registry
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, OpenIndustry.MODID);
 
-    //COPPER BLOCKS SET
+    // region COPPER
     public static final RegistryObject<Block> COPPER_ORE = BlocksHolder.registerBlock(
             "copper_ore",
             () -> new OreBlock(
@@ -45,6 +46,8 @@ public final class BlocksHolder {
             ),
             OI_TAB
     );
+
+    //endregion
 
     // Register Functions
     public static void register(IEventBus eventBus) {

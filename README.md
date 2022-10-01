@@ -55,7 +55,6 @@ ___
 &nbsp - A useful Instruction Manual <br>
 </details>
 
-
 ___
 Have a look at the mod [changelog](CHANGELOG.md) \
 Developed with ♥ by [angelobdev](https://angelobdev.com) - Copyright 2022 [MIT License](LICENSE.md)

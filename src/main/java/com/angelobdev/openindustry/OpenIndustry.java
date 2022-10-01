@@ -2,6 +2,8 @@ package com.angelobdev.openindustry;
 
 import com.angelobdev.openindustry.block.BlocksHolder;
 import com.angelobdev.openindustry.item.ItemsHolder;
+import com.angelobdev.openindustry.world.feature.OIConfiguredFeatures;
+import com.angelobdev.openindustry.world.feature.OIPlacedFeatures;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +29,9 @@ public class OpenIndustry {
         // Register OpenIndustry customs
         BlocksHolder.register(modEventBus);
         ItemsHolder.register(modEventBus);
+
+        OIConfiguredFeatures.register(modEventBus);
+        OIPlacedFeatures.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
