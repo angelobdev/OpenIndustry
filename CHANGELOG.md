@@ -1,6 +1,14 @@
 # Changelog
 ___
 
+### Version 0.0.1.6-APLHA - 04/10/2022
+- World Ore Generation System,
+- Copper Ore Generation,
+- Rubber Tree, Planks and Stripped Wood,
+- Raw and Cooked Rubber.
+
 ### Version 0.0.1.3-APLHA - 30/09/2022
-- Started developing.
-- Introduced Copper metal along with ore, block and tools.
+- Copper ingot, ore, block, tools and armor.
+
+___
+<p style="font-size: 0.8em"><a style="color:#fca">Note:</a> Date is formatted as DD/MM/YYYY</p>

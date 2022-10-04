@@ -1,6 +1,7 @@
 {
     "pack": {
-        "description": "examplemod resources",
+        "name": "Open Industry Data Pack",
+        "description": "Open Industry Data Pack",
         "pack_format": 9,
         "forge:resource_pack_format": 9,
         "forge:data_pack_format": 10

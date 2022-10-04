@@ -1,6 +1,8 @@
 {
   "values": [
     "open_industry:copper_ore",
-    "open_industry:copper_block"
+    "open_industry:copper_block",
+    "open_industry:silver_ore",
+    "open_industry:silver_block"
   ]
 }

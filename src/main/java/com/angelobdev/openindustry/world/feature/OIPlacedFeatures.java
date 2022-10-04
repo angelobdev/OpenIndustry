@@ -13,6 +13,7 @@ import java.util.NoSuchElementException;
 
 import static com.angelobdev.openindustry.OpenIndustry.LOGGER;
 
+@SuppressWarnings("unused")
 public class OIPlacedFeatures {
 
     //Registry
@@ -20,22 +21,47 @@ public class OIPlacedFeatures {
 
     //region COPPER ORE
     public static RegistryObject<PlacedFeature> COPPER_ORE_PLACED = null;
+
     static {
         try {
-            COPPER_ORE_PLACED = PLACED_FEATURES.register(
-                    "copper_ore_placed",
-                    () -> new PlacedFeature(
-                            OIConfiguredFeatures.COPPER_ORE.getHolder().get(),
-                            commonOrePlacement(
-                                    7, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(80))
-                            )
-                    )
-            );
+            OIConfiguredFeatures.COPPER_ORE.getHolder().ifPresent(
+                    configuredFeatureHolder ->
+                            COPPER_ORE_PLACED = PLACED_FEATURES.register(
+                                    "copper_ore_placed",
+                                    () -> new PlacedFeature(
+                                            configuredFeatureHolder,
+                                            commonOrePlacement(
+                                                    12, HeightRangePlacement.uniform(VerticalAnchor.absolute(24), VerticalAnchor.absolute(64))
+                                            )
+                                    )
+                            ));
         } catch (NoSuchElementException e) {
             LOGGER.error(e.getMessage());
         }
     }
-    //endregionOR
+    //endregion
+
+    //region SILVER ORE
+    public static RegistryObject<PlacedFeature> SILVER_ORE_PLACED = null;
+
+    static {
+        try {
+            OIConfiguredFeatures.SILVER_ORE.getHolder().ifPresent(
+                    configuredFeatureHolder ->
+                            SILVER_ORE_PLACED = PLACED_FEATURES.register(
+                                    "silver_ore_placed",
+                                    () -> new PlacedFeature(
+                                            configuredFeatureHolder,
+                                            commonOrePlacement(
+                                                    12, HeightRangePlacement.uniform(VerticalAnchor.absolute(12), VerticalAnchor.absolute(52))
+                                            )
+                                    )
+                            ));
+        } catch (NoSuchElementException e) {
+            LOGGER.error(e.getMessage());
+        }
+    }
+    //endregion
 
     //Functions
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {

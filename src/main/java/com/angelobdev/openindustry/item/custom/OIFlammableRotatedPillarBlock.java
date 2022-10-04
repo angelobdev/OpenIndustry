@@ -1,6 +1,6 @@
 package com.angelobdev.openindustry.item.custom;
 
-import com.angelobdev.openindustry.block.BlocksHolder;
+import com.angelobdev.openindustry.block.OIBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.AxeItem;
@@ -35,12 +35,12 @@ public class OIFlammableRotatedPillarBlock extends RotatedPillarBlock {
     @Override
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
 
-        if(context.getItemInHand().getItem() instanceof AxeItem){
-            if(state.is(BlocksHolder.RUBBER_LOG.get())){
-                return BlocksHolder.STRIPPED_RUBBER_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+        if (context.getItemInHand().getItem() instanceof AxeItem) {
+            if (state.is(OIBlocks.RUBBER_LOG.get())) {
+                return OIBlocks.STRIPPED_RUBBER_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
-            if(state.is(BlocksHolder.RUBBER_WOOD.get())){
-                return BlocksHolder.STRIPPED_RUBBER_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if (state.is(OIBlocks.RUBBER_WOOD.get())) {
+                return OIBlocks.STRIPPED_RUBBER_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
 

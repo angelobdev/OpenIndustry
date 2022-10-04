@@ -4,16 +4,21 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-import static com.angelobdev.openindustry.item.ItemsHolder.COPPER_INGOT;
+import static com.angelobdev.openindustry.item.OIItems.COPPER_INGOT;
+import static com.angelobdev.openindustry.item.OIItems.SILVER_INGOT;
 
 public enum OITier implements Tier {
 
-    COPPER_TIER(128, 3, 10, 12f, 2f, Ingredient.of(COPPER_INGOT.get()));
+    COPPER_TIER(128, 3, 10, 12f, 2f, Ingredient.of(COPPER_INGOT.get())),
+    SILVER_TIER(256, 3, 10, 14f, 2f, Ingredient.of(SILVER_INGOT.get()));
 
     //CUSTOM CLASS
-    private int uses, level, enchantmentValue;
-    private float speed, attackDamageBonus;
-    private Ingredient repairIngredient;
+    private final int uses;
+    private final int level;
+    private final int enchantmentValue;
+    private final float speed;
+    private final float attackDamageBonus;
+    private final Ingredient repairIngredient;
 
     OITier(int uses, int level, int enchantmentValue, float speed, float attackDamageBonus, Ingredient repairIngredient) {
         this.uses = uses;

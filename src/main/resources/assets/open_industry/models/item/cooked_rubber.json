@@ -1,3 +1,6 @@
 {
-  "parent": "open_industry:block/cooked_rubber"
+  "parent": "item/generated",
+  "textures" : {
+    "layer0" : "open_industry:item/cooked_rubber"
+  }
 }

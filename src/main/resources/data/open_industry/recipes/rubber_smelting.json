@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "group": "rubber",
+  "ingredient": {
+    "item": "open_industry:raw_rubber"
+  },
+  "result": "open_industry:cooked_rubber"
+}

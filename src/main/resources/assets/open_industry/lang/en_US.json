@@ -17,11 +17,30 @@
   "block.open_industry.copper_ore" : "Copper Ore",
   "block.open_industry.copper_block" : "Block of Copper",
 
+  "item.open_industry.silver_ingot" : "Silver Ingot",
+
+  "item.open_industry.silver_helmet" : "Silver Helmet",
+  "item.open_industry.silver_chestplate" : "Silver Chestplate",
+  "item.open_industry.silver_leggings" : "Silver Leggings",
+  "item.open_industry.silver_boots" : "Silver Boots",
+
+  "item.open_industry.silver_sword" : "Silver Sword",
+  "item.open_industry.silver_pickaxe" : "Silver Pickaxe",
+  "item.open_industry.silver_axe" : "Silver Axe",
+  "item.open_industry.silver_shovel" : "Silver Shovel",
+  "item.open_industry.silver_hoe" : "Silver Hoe",
+
+  "block.open_industry.silver_ore" : "Silver Ore",
+  "block.open_industry.silver_block" : "Block of Silver",
+
   "block.open_industry.rubber_log" : "Rubber Log",
   "block.open_industry.rubber_wood" : "Rubber Wood",
   "block.open_industry.stripped_rubber_log" : "Stripped Rubber Log",
   "block.open_industry.stripped_rubber_wood" : "Stripped Rubber Wood",
   "block.open_industry.rubber_planks" : "Rubber Planks",
   "block.open_industry.rubber_leaves" : "Rubber Leaves",
-  "block.open_industry.rubber_sapling" : "Rubber Sapling"
+  "block.open_industry.rubber_sapling" : "Rubber Sapling",
+
+  "item.open_industry.raw_rubber" : "Raw Rubber",
+  "item.open_industry.cooked_rubber" : "Cooked Rubber"
 }

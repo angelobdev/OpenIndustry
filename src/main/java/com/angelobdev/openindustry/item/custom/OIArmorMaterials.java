@@ -1,11 +1,11 @@
 package com.angelobdev.openindustry.item.custom;
 
 import com.angelobdev.openindustry.OpenIndustry;
+import com.angelobdev.openindustry.item.OIItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
@@ -14,7 +14,8 @@ import java.util.function.Supplier;
 public enum OIArmorMaterials implements ArmorMaterial {
 
     //ARMOR MATERIALS
-    COPPER("copper", 15, new int[]{ 1, 4, 5, 2 }, 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(Items.IRON_INGOT));
+    COPPER("copper", 15, new int[]{ 1, 4, 5, 2 }, 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(OIItems.COPPER_INGOT.get())),
+    SILVER("silver", 18, new int[]{ 2, 5, 6, 3 }, 14, SoundEvents.ARMOR_EQUIP_IRON, 0.1F, 0.1F, () -> Ingredient.of(OIItems.SILVER_INGOT.get()));
 
     //CUSTOM ARMOR MATERIAL
     private static final int[] HEALTH_PER_SLOT = new int[]{ 13, 15, 16, 11 };
