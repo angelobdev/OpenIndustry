@@ -1,4 +1,4 @@
-# Changelog
+![OPEN INDUSTRY](/git/images/open_industry_clog.png "Open Industry")
 ___
 
 ### Version 0.0.1.6-APLHA - 04/10/2022
@@ -12,4 +12,6 @@ ___
 - Copper ingot, ore, block, tools and armor.
 
 ___
-<p style="font-size: 0.8em"><a style="color:#fca">Note:</a> Date is formatted as DD/MM/YYYY</p>
+Developed with ♥ by [angelobdev](https://angelobdev.com) - Copyright 2022 [MIT License](LICENSE.md)
+___
+<p style="font-size: 0.8em"><a style="color:#f66">*</a> Date is formatted as DD/MM/YYYY</p>

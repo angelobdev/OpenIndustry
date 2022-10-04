@@ -1,3 +1,5 @@
+![OPEN INDUSTRY](/git/images/open_industry.png "Open Industry")
+
 ## Welcome to OpenIndustry
 This is kind of a porting of IndustrialCraft2 for Minecraft 1.19.2
 ___
