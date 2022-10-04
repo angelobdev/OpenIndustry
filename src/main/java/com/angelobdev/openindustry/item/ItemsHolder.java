@@ -137,6 +137,24 @@ public final class ItemsHolder {
 
     //endregion (COPPER ITEMS)
 
+    //region RUBBER
+    public static final RegistryObject<Item> RAW_RUBBER = ITEMS.register(
+            "raw_rubber",
+            () -> new Item(
+                    new Item.Properties()
+                            .tab(OI_TAB)
+            )
+    );
+
+    public static final RegistryObject<Item> COOKED_RUBBER = ITEMS.register(
+            "cooked_rubber",
+            () -> new Item(
+                    new Item.Properties()
+                            .tab(OI_TAB)
+            )
+    );
+    //endregion
+
     // Register function
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

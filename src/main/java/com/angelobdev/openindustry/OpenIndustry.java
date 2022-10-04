@@ -8,6 +8,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -24,7 +25,9 @@ public class OpenIndustry {
     public OpenIndustry() {
         // Register the commonSetup method for modloading
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::clientSetup);
 
         // OpenIndustry custom registries
         BlocksHolder.register(modEventBus); // Blocks container
@@ -38,26 +41,12 @@ public class OpenIndustry {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
         LOGGER.info("Welcome to OpenIndustry for Minecraft 1.19.2!");
-
     }
 
-//    //You can use SubscribeEvent and let the Event Bus discover methods to call
-//    @SubscribeEvent
-//    public void onServerStarting(ServerStartingEvent event) {
-//        // Do something when the server starts
-//        LOGGER.info("Welcome to OpenIndustry for Minecraft Server 1.19.2!");
-//    }
-//
-//    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-//    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
-//    public static class ClientModEvents {
-//        @SubscribeEvent
-//        public static void onClientSetup(FMLClientSetupEvent event) {
-//            // Some client setup code
-//            LOGGER.info("HELLO FROM CLIENT SETUP");
-//            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-//        }
-//    }
+    private void clientSetup(final FMLClientSetupEvent event) {
+        //ItemBlockRenderTypes.setRenderLayer(BlocksHolder.RUBBER_LEAVES_BLOCK.get(), RenderType.cutout());
+        //ItemBlockRenderTypes.setRenderLayer(BlocksHolder.RUBBER_SAPLING.get(), RenderType.cutout());
+    }
+
 }

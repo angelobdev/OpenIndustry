@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "open_industry:block/rubber_sapling"
+  },
+  "render_type": "cutout"
+}

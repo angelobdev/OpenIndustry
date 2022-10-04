@@ -15,5 +15,13 @@
   "item.open_industry.copper_hoe" : "Copper Hoe",
 
   "block.open_industry.copper_ore" : "Copper Ore",
-  "block.open_industry.copper_block" : "Block of Copper"
+  "block.open_industry.copper_block" : "Block of Copper",
+
+  "block.open_industry.rubber_log" : "Rubber Log",
+  "block.open_industry.rubber_wood" : "Rubber Wood",
+  "block.open_industry.stripped_rubber_log" : "Stripped Rubber Log",
+  "block.open_industry.stripped_rubber_wood" : "Stripped Rubber Wood",
+  "block.open_industry.rubber_planks" : "Rubber Planks",
+  "block.open_industry.rubber_leaves" : "Rubber Leaves",
+  "block.open_industry.rubber_sapling" : "Rubber Sapling"
 }
