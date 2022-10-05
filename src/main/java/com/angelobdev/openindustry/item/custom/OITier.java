@@ -4,13 +4,13 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
-import static com.angelobdev.openindustry.item.OIItems.COPPER_INGOT;
-import static com.angelobdev.openindustry.item.OIItems.SILVER_INGOT;
+import static com.angelobdev.openindustry.item.OIItems.*;
 
 public enum OITier implements Tier {
 
-    COPPER_TIER(128, 3, 10, 12f, 2f, Ingredient.of(COPPER_INGOT.get())),
-    SILVER_TIER(256, 3, 10, 14f, 2f, Ingredient.of(SILVER_INGOT.get()));
+    COPPER_TIER(160, 3, 10, 8f, 0.8f, Ingredient.of(COPPER_INGOT.get())),
+    SILVER_TIER(280, 4, 12, 10f, 0.9f, Ingredient.of(SILVER_INGOT.get())),
+    IRIDIUM_TIER(420, 5, 16, 12f, 1f, Ingredient.of(IRIDIUM_INGOT.get()));
 
     //CUSTOM CLASS
     private final int uses;

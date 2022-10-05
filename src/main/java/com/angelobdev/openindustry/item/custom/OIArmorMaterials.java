@@ -14,8 +14,9 @@ import java.util.function.Supplier;
 public enum OIArmorMaterials implements ArmorMaterial {
 
     //ARMOR MATERIALS
-    COPPER("copper", 15, new int[]{ 1, 4, 5, 2 }, 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(OIItems.COPPER_INGOT.get())),
-    SILVER("silver", 18, new int[]{ 2, 5, 6, 3 }, 14, SoundEvents.ARMOR_EQUIP_IRON, 0.1F, 0.1F, () -> Ingredient.of(OIItems.SILVER_INGOT.get()));
+    COPPER("copper", 12, new int[]{ 1, 2, 3, 1 }, 12, SoundEvents.ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> Ingredient.of(OIItems.COPPER_INGOT.get())),
+    SILVER("silver", 14, new int[]{ 2, 3, 4, 1 }, 14, SoundEvents.ARMOR_EQUIP_IRON, 0.8F, 0.2F, () -> Ingredient.of(OIItems.SILVER_INGOT.get())),
+    IRIDIUM("iridium", 16, new int[]{ 2, 4, 6, 2 }, 16, SoundEvents.ARMOR_EQUIP_IRON, 1.4F, 0.4F, () -> Ingredient.of(OIItems.IRIDIUM_INGOT.get()));
 
     //CUSTOM ARMOR MATERIAL
     private static final int[] HEALTH_PER_SLOT = new int[]{ 13, 15, 16, 11 };

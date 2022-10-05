@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "open_industry:iridium_ingot"
+    }
+  ],
+  "result": {
+    "item": "open_industry:iridium_nugget",
+    "count": 4
+  }
+}

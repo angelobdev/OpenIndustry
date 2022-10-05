@@ -83,6 +83,30 @@ public final class OIBlocks {
 
     //endregion
 
+    // region IRIDIUM
+    public static final RegistryObject<Block> IRIDIUM_ORE = OIBlocks.registerBlock(
+            "iridium_ore",
+            () -> new Block(
+                    BlockBehaviour.Properties
+                            .of(Material.STONE)
+                            .strength(5f)
+                            .requiresCorrectToolForDrops()
+            ),
+            OI_TAB
+    );
+
+    public static final RegistryObject<Block> IRIDIUM_BLOCK = OIBlocks.registerBlock(
+            "iridium_block",
+            () -> new Block(
+                    BlockBehaviour.Properties
+                            .of(Material.METAL)
+                            .strength(6.8f)
+            ),
+            OI_TAB
+    );
+
+    //endregion
+
     //region RUBBER TREE
 
     public static final RegistryObject<Block> RUBBER_LOG = registerFuelBlock(

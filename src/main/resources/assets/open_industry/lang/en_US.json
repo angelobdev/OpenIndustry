@@ -1,46 +1,59 @@
 {
   "itemGroup.open_industry_tab" : "Open Industry",
 
+  "item.open_industry.raw_copper" : "Raw Copper",
   "item.open_industry.copper_ingot" : "Copper Ingot",
-
+  "item.open_industry.copper_nugget" : "Copper Nugget",
   "item.open_industry.copper_helmet" : "Copper Helmet",
   "item.open_industry.copper_chestplate" : "Copper Chestplate",
   "item.open_industry.copper_leggings" : "Copper Leggings",
   "item.open_industry.copper_boots" : "Copper Boots",
-
   "item.open_industry.copper_sword" : "Copper Sword",
   "item.open_industry.copper_pickaxe" : "Copper Pickaxe",
   "item.open_industry.copper_axe" : "Copper Axe",
   "item.open_industry.copper_shovel" : "Copper Shovel",
   "item.open_industry.copper_hoe" : "Copper Hoe",
-
   "block.open_industry.copper_ore" : "Copper Ore",
   "block.open_industry.copper_block" : "Block of Copper",
 
+  "item.open_industry.raw_silver" : "Raw Silver",
   "item.open_industry.silver_ingot" : "Silver Ingot",
-
+  "item.open_industry.silver_nugget" : "Silver Nugget",
   "item.open_industry.silver_helmet" : "Silver Helmet",
   "item.open_industry.silver_chestplate" : "Silver Chestplate",
   "item.open_industry.silver_leggings" : "Silver Leggings",
   "item.open_industry.silver_boots" : "Silver Boots",
-
   "item.open_industry.silver_sword" : "Silver Sword",
   "item.open_industry.silver_pickaxe" : "Silver Pickaxe",
   "item.open_industry.silver_axe" : "Silver Axe",
   "item.open_industry.silver_shovel" : "Silver Shovel",
   "item.open_industry.silver_hoe" : "Silver Hoe",
-
   "block.open_industry.silver_ore" : "Silver Ore",
   "block.open_industry.silver_block" : "Block of Silver",
 
+  "item.open_industry.raw_iridium" : "Raw Iridium",
+  "item.open_industry.iridium_ingot" : "Iridium Ingot",
+  "item.open_industry.iridium_nugget" : "Iridium Nugget",
+  "item.open_industry.iridium_helmet" : "Iridium Helmet",
+  "item.open_industry.iridium_chestplate" : "Iridium Chestplate",
+  "item.open_industry.iridium_leggings" : "Iridium Leggings",
+  "item.open_industry.iridium_boots" : "Iridium Boots",
+  "item.open_industry.iridium_sword" : "Iridium Sword",
+  "item.open_industry.iridium_pickaxe" : "Iridium Pickaxe",
+  "item.open_industry.iridium_axe" : "Iridium Axe",
+  "item.open_industry.iridium_shovel" : "Iridium Shovel",
+  "item.open_industry.iridium_hoe" : "Iridium Hoe",
+  "block.open_industry.iridium_ore" : "Iridium Ore",
+  "block.open_industry.iridium_block" : "Block of Iridium",
+
+  "item.open_industry.raw_rubber" : "Raw Rubber",
+  "item.open_industry.cooked_rubber" : "Cooked Rubber",
   "block.open_industry.rubber_log" : "Rubber Log",
   "block.open_industry.rubber_wood" : "Rubber Wood",
   "block.open_industry.stripped_rubber_log" : "Stripped Rubber Log",
   "block.open_industry.stripped_rubber_wood" : "Stripped Rubber Wood",
   "block.open_industry.rubber_planks" : "Rubber Planks",
   "block.open_industry.rubber_leaves" : "Rubber Leaves",
-  "block.open_industry.rubber_sapling" : "Rubber Sapling",
+  "block.open_industry.rubber_sapling" : "Rubber Sapling"
 
-  "item.open_industry.raw_rubber" : "Raw Rubber",
-  "item.open_industry.cooked_rubber" : "Cooked Rubber"
 }

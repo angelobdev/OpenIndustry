@@ -40,7 +40,6 @@ public class OIConfiguredFeatures {
     //endregion
 
     //region SILVER ORE
-
     public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_SILVER_ORE = Suppliers.memoize(
             () -> List.of(
                     OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, OIBlocks.SILVER_ORE.get().defaultBlockState())
@@ -50,6 +49,19 @@ public class OIConfiguredFeatures {
     public static final RegistryObject<ConfiguredFeature<?, ?>> SILVER_ORE = CONFIGURED_FEATURES.register(
             "silver_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_SILVER_ORE.get(), 7)) // 7 is the vein-size
+    );
+    //endregion
+
+    //region IRIDIUM ORE
+    public static final @NotNull Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_IRIDIUM_ORE = Suppliers.memoize(
+            () -> List.of(
+                    OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, OIBlocks.IRIDIUM_ORE.get().defaultBlockState())
+            )
+    );
+
+    public static final @NotNull RegistryObject<ConfiguredFeature<?, ?>> IRIDIUM_ORE = CONFIGURED_FEATURES.register(
+            "iridium_ore",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_IRIDIUM_ORE.get(), 7)) // 7 is the vein-size
     );
     //endregion
 

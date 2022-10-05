@@ -4,7 +4,7 @@
   "experience": 0.7,
   "group": "copper",
   "ingredient": {
-    "item": "open_industry:copper_ore"
+    "item": "open_industry:raw_copper"
   },
   "result": "open_industry:copper_ingot"
 }

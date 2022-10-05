@@ -63,6 +63,29 @@ public class OIPlacedFeatures {
     }
     //endregion
 
+    //region IRIDIUM ORE
+    public static RegistryObject<PlacedFeature> IRIDIUM_ORE_PLACED = null;
+
+    static {
+        try {
+            OIConfiguredFeatures.IRIDIUM_ORE.getHolder().ifPresent(
+                    configuredFeatureHolder ->
+                            IRIDIUM_ORE_PLACED = PLACED_FEATURES.register(
+                                    "iridium_ore_placed",
+                                    () -> new PlacedFeature(
+                                            configuredFeatureHolder,
+                                            rareOrePlacement(
+                                                    12, HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(24))
+                                            )
+                                    )
+                            ));
+        } catch (NoSuchElementException e) {
+            LOGGER.error(e.getMessage());
+        }
+    }
+    //endregion
+
+
     //Functions
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());

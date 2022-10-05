@@ -1,10 +1,10 @@
 {
   "type": "minecraft:blasting",
-  "cookingtime": 110,
-  "experience": 0.8,
+  "cookingtime": 100,
+  "experience": 0.4,
   "group": "silver",
   "ingredient": {
-    "item": "open_industry:silver_ore"
+    "item": "open_industry:raw_silver"
   },
   "result": "open_industry:silver_ingot"
 }

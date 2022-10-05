@@ -3,6 +3,8 @@
     "open_industry:copper_ore",
     "open_industry:copper_block",
     "open_industry:silver_ore",
-    "open_industry:silver_block"
+    "open_industry:silver_block",
+    "open_industry:iridium_ore",
+    "open_industry:iridium_block"
   ]
 }

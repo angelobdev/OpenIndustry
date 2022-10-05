@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "open_industry:silver_ore",
+          "name": "open_industry:raw_silver",
           "functions": [
             {
               "function": "minecraft:set_count",

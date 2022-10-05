@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "open_industry:copper_ore",
+          "name": "open_industry:raw_copper",
           "functions": [
             {
               "function": "minecraft:set_count",
