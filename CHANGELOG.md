@@ -1,6 +1,12 @@
 ![OPEN INDUSTRY](/git/images/open_industry_clog.png "Open Industry")
 ___
 
+### Version 0.0.1.7-APLHA - 05/10/2022
+- Iridium (Ore Gen, Armor and tools)
+- Raw Metals dropped by ores
+- Nuggets
+- New textures and recipes
+
 ### Version 0.0.1.6-APLHA - 04/10/2022
 - World Ore Generation System,
 - Copper Ore Generation,
