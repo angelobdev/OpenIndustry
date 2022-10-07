@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 0.4,
+  "group": "iridium",
+  "ingredient": {
+    "item": "open_industry:iridium_ore"
+  },
+  "result": "open_industry:iridium_ingot"
+}

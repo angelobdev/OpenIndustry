@@ -1,6 +1,10 @@
 ![OPEN INDUSTRY](/git/images/open_industry_clog.png "Open Industry")
 ___
 
+### Version 0.0.1.8-APLHA - 07/10/2022
+- Iron Furnace (simple furnace, but fuel lasts longer)
+- Re-introduced custom ore smelting (not only raw metals)
+
 ### Version 0.0.1.7-APLHA - 05/10/2022
 - Iridium (Ore Gen, Armor and tools)
 - Raw Metals dropped by ores

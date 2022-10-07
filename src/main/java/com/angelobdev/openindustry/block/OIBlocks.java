@@ -1,6 +1,7 @@
 package com.angelobdev.openindustry.block;
 
 import com.angelobdev.openindustry.OpenIndustry;
+import com.angelobdev.openindustry.block.custom.IronFurnaceBlock;
 import com.angelobdev.openindustry.item.OIItems;
 import com.angelobdev.openindustry.item.custom.OIFlammableRotatedPillarBlock;
 import com.angelobdev.openindustry.world.feature.tree.RubberTreeGrower;
@@ -34,6 +35,16 @@ public final class OIBlocks {
 
     // Blocks Registry
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, OpenIndustry.MODID);
+
+    public static final RegistryObject<IronFurnaceBlock> IRON_FURNACE = OIBlocks.registerBlock(
+            "iron_furnace",
+            () -> new IronFurnaceBlock(
+                    BlockBehaviour.Properties
+                            .copy(FURNACE)
+                            .strength(6f)
+            ),
+            OI_TAB
+    );
 
     // region COPPER
     public static final RegistryObject<Block> COPPER_ORE = OIBlocks.registerBlock(

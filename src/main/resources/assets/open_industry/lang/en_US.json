@@ -54,6 +54,8 @@
   "block.open_industry.stripped_rubber_wood" : "Stripped Rubber Wood",
   "block.open_industry.rubber_planks" : "Rubber Planks",
   "block.open_industry.rubber_leaves" : "Rubber Leaves",
-  "block.open_industry.rubber_sapling" : "Rubber Sapling"
+  "block.open_industry.rubber_sapling" : "Rubber Sapling",
+
+  "block.open_industry.iron_furnace" : "Iron Furnace"
 
 }
